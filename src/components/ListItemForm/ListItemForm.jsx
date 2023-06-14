@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./ListItemForm.css";
 
-// eslint-disable-next-line react/prop-types
 function ListItemForm({ addItem }) {
   const [formData, setFormData] = useState({ food: "", quantity: 1 });
 
@@ -23,8 +22,8 @@ function ListItemForm({ addItem }) {
     }));
   }
 
-  // NOTE: The name attribute on the form input fields (line 32 & 40)
-  // MUST match the formData object key names (line 5)
+  // NOTE: The name attribute on the form input fields
+  // MUST match the formData object key names
   return (
     <form onSubmit={handleSubmit}>
       <label className="form-label" htmlFor="name">Food:</label>
