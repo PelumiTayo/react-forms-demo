@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ListItemForm.css";
 
+// eslint-disable-next-line react/prop-types
 function ListItemForm({ addItem }) {
   const [formData, setFormData] = useState({ food: "", quantity: 1 });
 

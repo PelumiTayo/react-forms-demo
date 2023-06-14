@@ -17,8 +17,8 @@ function ShoppingList() {
       <ListItemForm addItem={addItem} />
 
       {items.length ?
-        items.map(item => (
-          <ListItem item={item} key={item.id} />
+        items.map((item, idx) => (
+          <ListItem item={item} key={idx} />
         ))
         :
         <h3>Your shopping list is empty</h3>
